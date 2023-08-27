@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --section-bg-color: #f8eded59;
+}
+
+::selection {
+  background-color: #e4bad4;
+  color: #fff;
+}
+
+body {
+  letter-spacing: 1px;
+  font-family: "Manrope", sans-serif;
+  color: rgb(75, 7, 75);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Comfortaa", cursive;
+}
+
+h1 {
+  background-image: linear-gradient(to left, #62274a, #e4bad4d3);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.btn-main {
+  font-family: "Comfortaa", cursive;
+  letter-spacing: 1px;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #92d4b7;
+  --bs-btn-border-color: #92d4b7;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #6bae91;
+  --bs-btn-hover-border-color: #6bae91;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #6bae91;
+  --bs-btn-active-border-color: #6bae91;
+}
+
+header {
+  background-color: var(--section-bg-color);
+}
+
+.search {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-control:focus {
+  border-color: #be9fb2;
+  box-shadow: 0 0 0 0.25rem #84506f2d;
+}
+
+section {
+  background-color: var(--section-bg-color);
+  min-height: 100vh;
+}
+
+.card {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#cardImg {
+  overflow: hidden;
+}
+
+.card-text {
+  text-decoration: none;
+  color: rgb(75, 7, 75);
+}
+
+.card img {
+  height: 330px;
+  object-fit: cover;
+  transition: transform 250ms ease-in-out, opacity 100ms linear;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.fixedCard {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardTitle {
+  position: absolute;
+  background-image: linear-gradient(to right, #e4bad4, #92d4b7);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  left: 50%;
+  top: -20%;
+  transform: translate(-50%, -50%);
+  transition: top 500ms ease-in-out;
+}
+
+.fixedCard:hover .cardTitle {
+  top: 50%;
+}
+
+.fixedCard:hover img {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: var(--section-bg-color);
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  :root {
+    font-size: 12px;
+  }
+}

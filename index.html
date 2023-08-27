@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#E4BAD4"
+          fill-opacity="1"
+          d="M0,224L30,197.3C60,171,120,117,180,122.7C240,128,300,192,360,224C420,256,480,256,540,224C600,192,660,128,720,101.3C780,75,840,85,900,106.7C960,128,1020,160,1080,170.7C1140,181,1200,171,1260,149.3C1320,128,1380,96,1410,80L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="caption text-center">
+          <h1 class="mb-5 mt-5 mt-md-0">Image Search App</h1>
+        </div>
+        <div
+          class="search d-flex justify-content-center align-items-center gap-2"
+        >
+          <input
+            id="searchInput"
+            type="text"
+            class="form-control"
+            placeholder="Search for images"
+          />
+          <button class="btn btn-main" id="searchBtn">Search</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="imgs" class="pt-5">
+        <div class="container">
+          <div class="row g-4" id="inputResults">
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1600647993560-11a92e039466?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Flowers</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2043&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Animals</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1621915213989-0812987ecd06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Cars</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1559666126-84f389727b9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1777&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Landscapes</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1512540452972-baac55d40ef1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Art</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1601435119596-7cc938a5cbf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Quotes</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1606744888344-493238951221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Interior Design</h2>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card fixedCard">
+                <img
+                  src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+                  class="card-img-top"
+                  alt=""
+                />
+                <h2 class="cardTitle p-3">Random</h2>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <button class="btn btn-main mx-auto d-none" id="showMoreBtn">
+              Show more
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#E4BAD4"
+          fill-opacity="1"
+          d="M0,224L30,197.3C60,171,120,117,180,122.7C240,128,300,192,360,224C420,256,480,256,540,224C600,192,660,128,720,101.3C780,75,840,85,900,106.7C960,128,1020,160,1080,170.7C1140,181,1200,171,1260,149.3C1320,128,1380,96,1410,80L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
