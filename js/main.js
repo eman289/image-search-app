@@ -64,6 +64,7 @@ $(function () {
 
   $("#searchInput").on("keyup", function (event) {
     if (event.key === "Enter") {
+      page = 1;
       performSearch();
     }
   });
@@ -75,7 +76,11 @@ $(function () {
 
   $("#showMoreBtn").on("click", function () {
     page++;
-    performSearch();
+    if (searchInput == $("#searchInput").val()) {
+      performSearch();
+    } else {
+      searchImgs();
+    }
   });
 
   $(".fixedCard").on("click", function () {
